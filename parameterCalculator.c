@@ -1,9 +1,33 @@
 #include<stdio.h>
 #include<math.h>
 #include<conio.h>
+#include<stdbool.h>
 
 /* Global Variables */
 #define PI 3.14159
+
+/*
+ * Function 	: main
+ * Attributes 	: none
+ * Description  : Calls every method and run them
+ * Method Type	: void 
+ */
+void squareParameter() {
+	/* Variable */
+	int side;
+	float parameter;
+	
+	printf("Enter Side : ");
+	scanf("%d", &side);
+	
+	if (side <= 0) {
+		printf("Invalid Input!\n");
+		squareParameter();
+	} else {
+		parameter = side * 4;
+		printf("Parameter of your square is : %.02f. \n", parameter);
+	}
+}
 
 /*
  * Function 	: main
@@ -32,7 +56,7 @@ void main() {
 			/* Switch to call methods according userChoice */
 			switch(userChoice) {
 				case 1:
-//					squareArea();
+					squareParameter();
 					break;
 				case 2:
 //					circleArea();
