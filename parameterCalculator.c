@@ -63,7 +63,7 @@ void circleParameter() {
  * Variables	: sideOne	=>	Type : int		=> Store value of side 1 from user
  *				  sideTwo	=>	Type : int		=> Store value of side 2 from user
  *				  parameter	=>	Type : float	=> Store value of parameter
- * Description  : take input and calculate parameter of circle
+ * Description  : take input and calculate parameter of rectangle
  * Method Type	: void 
  */
 void rectangleParameter() {
@@ -99,14 +99,14 @@ void main() {
 	while(true) {
 		
 		/* Printing instruction */
-		printf("\nChoose Your Code : \n  1 - Square\n  2 - Circle\n  3 - Rectangle\n  4 - Cube\n  5 - Cone\n  6 - Sphere\n  7 - Cylinder\n  8 - Exit\n");
+		printf("\nChoose Your Code : \n  1 - Square\n  2 - Circle\n  3 - Rectangle\n  4 - Exit\n");
 		
 		/* Taking User Input */
 		printf("Enter Your Choice : ");
 		scanf("%d", &userChoice);
 		
 		/* Validation */
-		if (userChoice < 1 || userChoice > 8) {
+		if (userChoice < 1 || userChoice > 4) {
 			printf("Invlaid Input!\n");
 		} else {
 			/* Switch to call methods according userChoice */
@@ -119,18 +119,6 @@ void main() {
 					break;
 				case 3:
 					rectangleParameter();
-					break;
-				case 4:
-//					cubeArea();
-					break;
-				case 5:
-//					coneArea();
-					break;
-				case 6:
-//					sphereArea();
-					break;
-				case 7:
-//					cylinderArea();
 					break;
 				default:
 					return;
