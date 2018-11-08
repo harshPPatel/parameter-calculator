@@ -7,9 +7,11 @@
 #define PI 3.14159
 
 /*
- * Function 	: main
+ * Function 	: squareParameter
  * Attributes 	: none
- * Description  : Calls every method and run them
+ * Variables	: side		=>	Type : int		=> Store value of side from user
+ *				  parameter	=>	Type : float	=> Store value of parameter
+ * Description  : take input and calculate parameter of square
  * Method Type	: void 
  */
 void squareParameter() {
@@ -28,6 +30,32 @@ void squareParameter() {
 		printf("Parameter of your square is : %.02f. \n", parameter);
 	}
 }
+
+/*
+ * Function 	: circleParameter
+ * Attributes 	: none
+ * Variables	: radius	=>	Type : int		=> Store value of radius from user
+ *				  parameter	=>	Type : float	=> Store value of parameter
+ * Description  : take input and calculate parameter of circle
+ * Method Type	: void 
+ */
+void circleParameter() {
+	/* Variable */
+	int radius;
+	float parameter;
+	
+	printf("Enter Radius : ");
+	scanf("%d", &radius);
+	
+	if (radius <= 0) {
+		printf("Invalid Input!\n");
+		circleParameter();
+	} else {
+		parameter = 2 * PI * radius;
+		printf("Parameter of your circle is : %.02f. \n", parameter);
+	}
+}
+
 
 /*
  * Function 	: main
@@ -59,7 +87,7 @@ void main() {
 					squareParameter();
 					break;
 				case 2:
-//					circleArea();
+					circleParameter();
 					break;
 				case 3:
 //					rectangleArea();
