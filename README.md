@@ -1,4 +1,4 @@
-# parameterCalculator
+# Parameter Calculator
 
 An C language, console based program which provides different options to the user to calculate its parameter. It have different methods for all different shapes and switch statement is used to check user input. While loop is used to run this function continuously. But it breaks the loop when user enters 4 in the console.
 
