@@ -4,26 +4,10 @@ An C language, console based program which provides different options to the use
 
 Checkout the live demo here: [Parameter Calculator](https://repl.it/@harshPPatel/Parameter-Calculator)
 
-### includes :
-- stdio.h
-- conio.h
-- math.h
-- stdbool.h
-
-### Global Variables :
-- **PI** : 3.14159
-
-### Included Methods : 
-- squareParameter
-- circleParameter
-- rectengleParameter
-
 ### Included Shapes : 
 - Square
 - Circle
 - Rectangle
-
-More will be added soon!!
 
 ## Methods
 - ### Square Parameter Method
